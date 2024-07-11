@@ -374,7 +374,7 @@ header{
   grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 }
 
-.portfolio__item{
+/* .portfolio__item{
   background: var(--clr-accent);
   overflow:hidden;
 }
@@ -394,7 +394,7 @@ header{
 .portfolio__item:focus .portfolio__img{
       transform:scale(1.2);
       opacity:.5;
-}
+} */
 
 /*footer*/
 
@@ -494,3 +494,58 @@ header{
 .email-link:hover {
   background-color: #0056b3;
 }
+
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  flex: 0 0 20%;
+  margin: 0 10px;
+  transition: transform 0.5s ease, flex 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  width: auto;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.carousel-item.active {
+  flex: 0 0 20%;
+  transform: scale(1.2);
+}
+
+.carousel-indicators {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.carousel-indicators .dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: gray;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-indicators .dot.active {
+  background-color: black;
+}
+
