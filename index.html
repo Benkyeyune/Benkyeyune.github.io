@@ -1,190 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>
-      Ben's Portfolio
-    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Kyeyune | Full-Stack Developer</title>
+    <meta name="description" content="Ben Kyeyune is a full-stack software developer building polished digital products, performant web experiences, and product-minded solutions for startups and ambitious teams.">
     <link rel="icon" type="image/png" href="images/ben_logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="index.css">
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <img src="images/ben_logo.png" alt="">
-      </div>
-    
-      <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburger"></span>
-      </button>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-          <li class="nav__item"><a href="#services" class="nav__link">My services</a></li>
-          <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-          <li class="nav__item"><a href="#work" class="nav__link">My work</a></li>
-        </ul>
-      </nav>
-    </header>
+</head>
 
-    <!--Introduction-->
-    <section class="intro" id="home">
-      <h1 class="section__title section__title--intro">
-        Hi, I am <strong>Kyeyune Ben</strong>
-      </h1>
-      <p class="section__subtitle section__subtitle--intro">Full-Stack Software Developer</p>
-      <img src="images/img-profile.JPEG" alt="a profile picture of Ben" class="intro__img">
-    </section>
-
-    <!--My services-->
-    <section class="my-services" id="services">
-      <h2 class="section__title section__title--services">What I do</h2>
-      <div class="services">
-        <div class="service">
-          <h3>UI/UX design</h3>
-          <p>I offer services like UI/UX designing using Figma.</p>
-        </div> <!-- / service-->
-
-        <div class="service">
-          <h3>Web and mobile application development</h3>
-          <p>I do full stack web and mobile application development using frame works like Django,Node.js,React.js for web development and Flutter and react native for mobile application development</p>
-        </div>
-
-        <div class="service">
-          <h3>Wordpress</h3>
-          <p>I use word press to develop,host,maintain and monitor  websites.</p>
-        </div> <!-- / service-->
-      </div> <!-- / services-->
-
-      <a href="#work" class="btn">My Work</a>
-    </section>
-
-    <!--About me-->
-    <section class="about-me" id="about">
-      <h2 class="section__title section__title--about">Who I am</h2>
-      <p class="section__subtitle section__subtitle--about">Passionate Software developer</p>
-
-      <div class="about-me__body">
-        <p>I am a passionate Full-Stack Software developer holding a Bachelor's of Science in Computer Science at Makerere University .
-          <br>I have 3 years of experience in use of Html, CSS and Java Script for web development.I am a hardworking individual and a good team player always looking forward to learning new technologies.
-        </p>
-      </div>
-    
-      <img src="images/pic1.jpg" alt="A picture of Ben" class="about-me__img">
-    </section>
-
-    <!--My Work-->
-    <section class="my-work" id="work">
-      <h2 class="section__title">My work</h2>
-      <p class="section__subtitle">A selection of my range of work</p>
-
-      <div class="portfolio">
-        <!-- Portfolio item 01
-        <a href="https://irenejenilla.com/" target="_blank" class="portfolio__item">
-          <img src="images/irenez.png" alt="" class="portfolio__img">
-        </a>
-
-         <!--Portfolio item 02
-         <a href="https://vipatrusttoursandtravels.com/" target="_blank" class="portfolio__item">
-          <img src="images/Vipa.png" alt="" class="portfolio__img">
-        </a>
-
-          <!-- Portfolio item 03 
-         <a href="https://banknoterecognizer.netlify.app/" class="portfolio__item">
-          <img src="images/AI-money-investment_187c8226c79_large.jpg" alt="" class="portfolio__img">
-        </a>
-
-         <!--Portfolio item 04 
-         <a href="https://techinnovate-solutions.github.io/easycoffee-website/" class="portfolio__item">
-          <img src="images/arabica_coffee_13308709-cddb-4ce5-92d5-0d7d46c2f2d8_600x600_crop_center.webp" alt="" class="portfolio__img">
-        </a> -->
-        <div class="carousel">
-          <div class="carousel-inner">
-              <div class="carousel-item">
-                  <a href="https://irenejenilla.com/" target="_blank" class="portfolio__item">
-                      <img src="images/irenez.png" alt="Image 1" class="portfolio__img">
-                  </a>
-              </div>
-
-              <div class="carousel-item">
-                <a href="https://jolly-paprenjak-fc12ac.netlify.app/" target="_blank" class="portfolio__item">
-                    <img src="images/Byteburst-image.png" alt="Image 1" class="portfolio__img">
-                </a>
-            </div>
-
-              <div class="carousel-item">
-                  <a href="https://banknoterecognizer.netlify.app/" target="_blank" class="portfolio__item">
-                      <img src="images/AI-money-investment_187c8226c79_large.jpg" alt="Image 2" class="portfolio__img">
-                  </a>
-              </div>
-              <div class="carousel-item active">
-                  <a href="https://conte-web1.netlify.app/" target="_blank" class="portfolio__item">
-                      <img src="images/conte-image.png" alt="Image 3" class="portfolio__img">
-                  </a>
-              </div>
-              <div class="carousel-item">
-                  <a href="https://techinnovate-solutions.github.io/easycoffee-website/" target="_blank" class="portfolio__item">
-                      <img src="images/arabica_coffee_13308709-cddb-4ce5-92d5-0d7d46c2f2d8_600x600_crop_center.webp" alt="Image 4" class="portfolio__img">
-                  </a>
-              </div>
-          </div>
-          <div class="carousel-indicators">
-              <span class="dot" onclick="currentSlide(0)"></span>
-              <span class="dot active" onclick="currentSlide(1)"></span>
-              <span class="dot" onclick="currentSlide(2)"></span>
-              <span class="dot" onclick="currentSlide(3)"></span>
-          </div>
-      </div>
-         <!-- --Portfolio item 
-         <a href="#" class="portfolio__item">
-          <img src="images/my_services1.jpg" alt="" class="portfolio__img">
-        </a>
-
-         --Portfolio item 06
-         <a href="#" class="portfolio__item">
-          <img src="images/my_services1.jpg" alt="" class="portfolio__img">
-        </a>
-       -->
-      </div>
-
-    </section>
-
-    <!--Footer-->
-    <footer class="footer">
-
-      <div class="content">     
-        <div class="contact-info">
-            <h2>Contact Me on: <br>+256743121855/+256762830531</h2>
-            <p>Connect with me on my socials:</p>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/ben-kyeyune-046485254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
-                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                </a>
-                <a href="https://twitter.com/benk08829537?s=21&t=VdidqhLqHZ3iuzaptwHzlg" target="_blank">
-                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                </a>
-                <a href="https://www.facebook.com/ben.vybz.1?mibextid=LQQJ4d" target="_blank">
-                  <i class="fa fa-facebook-square" aria-hidden="true"></i>
-              </a>
-              <a href="https://github.com/Benkyeyune" target="_blank">
-                  <i class="fa fa-github-square" aria-hidden="true"></i>
-              </a>
-              <a href="https://www.instagram.com/ben_kyeyune?igsh=eXczMzkxYXFocHJx&utm_source=qr" target="_blank">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
+<body>
+    <div class="page-shell">
+        <header class="site-header">
+            <a href="#top" class="brand" aria-label="Ben Kyeyune home">
+                <span class="brand-mark">BK</span>
+                <span class="brand-copy">
+            <strong>Ben Kyeyune</strong>
+            <span>Full-Stack Developer</span>
+                </span>
             </a>
-            </div>
-            <p>Or send me an email:</p>
-                <a href="mailto:benkyeyune10@gmail.com" class="email-link">benkyeyune10@gmail.com</a>
-        </div>
-      </div>
-    </footer>
+
+            <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+        </button>
+
+            <nav class="site-nav" id="site-nav" aria-label="Primary">
+                <a href="#about">About</a>
+                <a href="#expertise">Expertise</a>
+                <a href="#projects">Projects</a>
+                <a href="#journey">Journey</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main id="top">
+            <section class="hero section">
+                <div class="hero-copy reveal">
+                    <p class="eyebrow">Product-minded engineering for modern brands and startups</p>
+                    <h1>
+                        I design and build
+                        <span>high-trust digital experiences</span> that feel premium from the first click.
+                    </h1>
+                    <p class="hero-intro">
+                        I'm Ben Kyeyune, a full-stack developer focused on web products, conversion-driven interfaces, and scalable implementation. I help teams ship work that looks sharp, performs well, and earns confidence quickly.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#contact">Hire Me</a>
+                        <a class="button button-secondary" href="#projects">View Selected Work</a>
+                    </div>
+
+                    <div class="hero-meta" aria-label="Social links">
+                        <a href="mailto:benkyeyune10@gmail.com" aria-label="Email">
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/Benkyeyune" target="_blank" rel="noreferrer" aria-label="GitHub">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ben-kyeyune-046485254?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=ios_app" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://twitter.com/benk08829537?s=21&amp;t=VdidqhLqHZ3iuzaptwHzlg" target="_blank" rel="noreferrer" aria-label="X / Twitter">
+                            <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal">
+                    <div class="profile-card">
+                        <div class="profile-card__glow"></div>
+                        <img src="images/img-profile.JPEG" alt="Portrait of Ben Kyeyune" class="profile-card__image">
+                    </div>
+
+                    <div class="floating-note floating-note--top">
+                        <span>3+ years building</span>
+                        <strong>startup products and web platforms</strong>
+                    </div>
+
+                    <div class="floating-note floating-note--bottom">
+                        <span>Based in Uganda</span>
+                        <strong>Available for remote collaboration</strong>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="stats-band reveal" aria-label="Key strengths">
+                <article>
+                    <strong>Full-Stack Delivery</strong>
+                    <span>From interface strategy to implementation and launch.</span>
+                </article>
+                <article>
+                    <strong>Design-Sensitive Build Quality</strong>
+                    <span>Careful spacing, hierarchy, responsiveness, and polish.</span>
+                </article>
+                <article>
+                    <strong>Product Focus</strong>
+                    <span>Built to earn trust, drive action, and support growth.</span>
+                </article>
+            </section>
+
+            <section class="section section-grid" id="about">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">About</p>
+                    <h2>Clear thinking, clean execution, and products built to last.</h2>
+                </div>
+
+                <div class="about-layout">
+                    <article class="about-card reveal">
+                        <p>
+                            I'm a full-stack software developer with a Computer Science background from Makerere University and practical experience building websites, product interfaces, and application experiences for real users.
+                        </p>
+                        <p>
+                            My strength sits at the intersection of development and UX: I care about strong visuals, maintainable code, performance, and modern stacks built with Next.js, React, Tailwind CSS, Prisma, PostgreSQL, and MongoDB.
+                        </p>
+                        <p>
+                            I work best with founders, teams, and clients who value thoughtful execution, strong communication, and a final product that feels credible from every angle.
+                        </p>
+                    </article>
+
+                    <aside class="about-highlights reveal">
+                        <div class="highlight-card">
+                            <span class="highlight-label">Focus areas</span>
+                            <p>Frontend architecture, full-stack web apps, landing pages, and product presentation.</p>
+                        </div>
+                        <div class="highlight-card">
+                            <span class="highlight-label">What clients get</span>
+                            <p>Fast iteration, polished UI, responsive builds, and product-minded execution.</p>
+                        </div>
+                        <div class="highlight-card">
+                            <span class="highlight-label">How I work</span>
+                            <p>Structured, collaborative, and detail-focused from concept to launch.</p>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+
+            <section class="section section-grid" id="expertise">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Expertise</p>
+                    <h2>Capabilities arranged like a product team, with a stack recruiters can scan fast.</h2>
+                </div>
+
+                <div class="expertise-grid">
+                    <article class="expertise-card reveal">
+                        <div class="expertise-card__head">
+                            <h3>Experience Design</h3>
+                            <span>01</span>
+                        </div>
+                        <p>Landing page strategy, UI systems, responsive layouts, interaction design, and design translation from idea to interface.</p>
+                        <ul>
+                            <li>Figma to code execution</li>
+                            <li>Visual hierarchy and accessibility</li>
+                            <li>Conversion-focused page structure</li>
+                        </ul>
+                    </article>
+
+                    <article class="expertise-card reveal">
+                        <div class="expertise-card__head">
+                            <h3>Frontend Engineering</h3>
+                            <span>02</span>
+                        </div>
+                        <p>Modern, performant interfaces built with reusable structure, semantic markup, and maintainable styling systems.</p>
+                        <ul>
+                            <li>Next.js and React</li>
+                            <li>Tailwind CSS and TypeScript</li>
+                            <li>Motion, states, and interaction polish</li>
+                        </ul>
+                    </article>
+
+                    <article class="expertise-card reveal">
+                        <div class="expertise-card__head">
+                            <h3>Product Development</h3>
+                            <span>03</span>
+                        </div>
+                        <p>Full-stack delivery across product websites and applications using tools that support rapid execution and stable growth.</p>
+                        <ul>
+                            <li>Node.js and Prisma</li>
+                            <li>PostgreSQL and MongoDB</li>
+                            <li>Deployment and launch readiness</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="logo-grid reveal" aria-label="Technology logos">
+                    <article class="logo-card">
+                        <img src="https://cdn.simpleicons.org/nextdotjs/ffffff" alt="Next.js logo">
+                        <span>Next.js</span>
+                    </article>
+                    <article class="logo-card">
+                        <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React logo">
+                        <span>React</span>
+                    </article>
+                    <article class="logo-card">
+                        <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind CSS logo">
+                        <span>Tailwind</span>
+                    </article>
+                    <article class="logo-card">
+                        <img src="https://cdn.simpleicons.org/typescript/3178C6" alt="TypeScript logo">
+                        <span>TypeScript</span>
+                    </article>
+                    <article class="logo-card">
+                        <img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="PostgreSQL logo">
+                        <span>PostgreSQL</span>
+                    </article>
+                    <article class="logo-card">
+                        <img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB logo">
+                        <span>MongoDB</span>
+                    </article>
+                    <article class="logo-card">
+                        <img src="https://cdn.simpleicons.org/prisma/ffffff" alt="Prisma logo">
+                        <span>Prisma</span>
+                    </article>
+                    <article class="logo-card">
+                        <img src="https://cdn.simpleicons.org/nodedotjs/5FA04E" alt="Node.js logo">
+                        <span>Node.js</span>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section section-grid" id="projects">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Selected Work</p>
+                    <h2>Projects that balance clarity, utility, and visual confidence.</h2>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card reveal project-card--featured">
+                        <div class="project-card__media">
+                            <img src="images/gradepply.png" alt="Preview of Gradepply website">
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__meta">
+                                <span>Education Platform</span>
+                                <span>Role: Full-Stack Developer</span>
+                            </div>
+                            <h3>Gradepply</h3>
+                            <p>A student-centered platform focused on academic guidance and application support, structured to make educational planning and digital workflows feel clear, credible, and easy to follow.</p>
+                            <ul class="project-tags">
+                                <li>Student Experience</li>
+                                <li>Application Support</li>
+                                <li>Full-Stack Platform</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://gradepply.com" target="_blank" rel="noreferrer">Live Site</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-card__media">
+                            <img src="images/roamifi.png" alt="Preview of Roamifi website">
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__meta">
+                                <span>WiFi Hotspot Business Platform</span>
+                                <span>Role: Frontend Developer</span>
+                            </div>
+                            <h3>RoamFi</h3>
+                            <p>A business-focused platform built to help operators manage WiFi hotspot services, present plans clearly, and support a smoother customer access experience.</p>
+                            <ul class="project-tags">
+                                <li>Hotspot Business UX</li>
+                                <li>Service Management</li>
+                                <li>Responsive Frontend</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://roamifi.net" target="_blank" rel="noreferrer">Live Site</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-card__media">
+                            <img src="images/nkwanzi.png" alt="Preview of Nkwanzi Music Academy website">
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__meta">
+                                <span>Music School Website</span>
+                                <span>Role: Frontend Developer</span>
+                            </div>
+                            <h3>Nkwanzi Music Academy</h3>
+                            <p>A music school website designed to showcase courses, support class bookings, and communicate a welcoming learning environment for musicians of all ages.</p>
+                            <ul class="project-tags">
+                                <li>Course Presentation</li>
+                                <li>Education Branding</li>
+                                <li>Responsive Frontend</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://nkwanzimusicacademy.com" target="_blank" rel="noreferrer">Live Site</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-card__media">
+                            <img src="images/buloba.png" alt="Preview of School Management System website">
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__meta">
+                                <span>School Management System</span>
+                                <span>Role: Full-Stack Developer</span>
+                            </div>
+                            <h3>School Management System</h3>
+                            <p>A school administration portal built for Buloba Royal College to provide secure account access and structured management of academic and operational workflows.</p>
+                            <ul class="project-tags">
+                                <li>Secure Login Flow</li>
+                                <li>Admin Workflows</li>
+                                <li>Full-Stack Delivery</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://bulobaroyal.com" target="_blank" rel="noreferrer">Live Site</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <section class="section section-grid" id="journey">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Journey</p>
+                    <h2>A concise view of how I've grown as a builder.</h2>
+                </div>
+
+                <div class="timeline">
+                    <article class="timeline-item reveal">
+                        <span class="timeline-year">Foundation</span>
+                        <div>
+                            <h3>Computer Science at Makerere University</h3>
+                            <p>Built technical depth in programming, problem-solving, and software fundamentals while sharpening collaborative project skills.</p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <span class="timeline-year">Frontend Craft</span>
+                        <div>
+                            <h3>Developed a stronger UI and interaction sensibility</h3>
+                            <p>Moved beyond basic implementation into layouts, spacing systems, responsive behavior, and building interfaces that feel intentional.</p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <span class="timeline-year">Full-Stack Delivery</span>
+                        <div>
+                            <h3>Expanded into end-to-end product execution</h3>
+                            <p>Worked across websites, applications, and launch-ready solutions using tools like React, Node.js, Django, Flutter, and WordPress.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section testimonial-section">
+                <div class="testimonial-card reveal">
+                    <p class="eyebrow">Credibility</p>
+                    <blockquote>
+                        "The strongest portfolios don't just show code. They show judgment. This page is designed to communicate exactly that: clarity, technical range, and a level of polish clients can trust."
+                    </blockquote>
+                    <p class="testimonial-note">Replace this with a real client or collaborator quote when available.</p>
+                </div>
+            </section>
+
+            <section class="section contact-section" id="contact">
+                <div class="contact-panel reveal">
+                    <div class="contact-copy">
+                        <p class="eyebrow">Let's Build</p>
+                        <h2>If you need a developer who cares about product quality and presentation, let's talk.</h2>
+                        <p>
+                            I'm open to freelance projects, product collaborations, and roles where strong frontend execution and full-stack thinking matter.
+                        </p>
+                    </div>
+
+                    <div class="contact-actions">
+                        <a class="button button-primary" href="mailto:benkyeyune10@gmail.com">benkyeyune10@gmail.com</a>
+                        <a class="button button-secondary" href="tel:+256743121855">Call +256 743 121855</a>
+                        <div class="contact-links">
+                            <a href="https://github.com/Benkyeyune" target="_blank" rel="noreferrer" aria-label="GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ben-kyeyune-046485254?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=ios_app" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.instagram.com/ben_kyeyune?igsh=eXczMzkxYXFocHJx&amp;utm_source=qr" target="_blank" rel="noreferrer" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.facebook.com/ben.vybz.1?mibextid=LQQJ4d" target="_blank" rel="noreferrer" aria-label="Facebook">
+                                <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>Ben Kyeyune</p>
+            <p>Full-Stack Developer building polished digital products.</p>
+        </footer>
+    </div>
 
     <script src="index.js"></script>
+</body>
 
-  </body>
 </html>
-
