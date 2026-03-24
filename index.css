@@ -805,6 +805,7 @@ textarea {
 @media (max-width: 780px) {
   .site-header {
     padding: 0.9rem 1rem;
+    overflow: visible;
   }
 
   .brand {
@@ -842,8 +843,10 @@ textarea {
   }
 
   .site-nav {
-    position: fixed;
-    inset: 5.25rem 1rem auto 1rem;
+    position: absolute;
+    top: calc(100% + 0.75rem);
+    left: 0;
+    right: 0;
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
@@ -854,6 +857,7 @@ textarea {
     box-shadow: var(--shadow);
     opacity: 0;
     visibility: hidden;
+    pointer-events: none;
     transform: translateY(-8px);
     transition: opacity 180ms ease, transform 180ms ease, visibility 180ms ease;
   }
@@ -861,11 +865,12 @@ textarea {
   .nav-open .site-nav {
     opacity: 1;
     visibility: visible;
+    pointer-events: auto;
     transform: translateY(0);
   }
 
   .hero {
-    padding-top: 3rem;
+    padding-top: 6.5rem;
   }
 
   .hero h1 {
@@ -887,6 +892,9 @@ textarea {
   }
 
   .stats-band {
+    width: min(var(--max-width), calc(100% - 2rem));
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 0;
   }
 
@@ -925,6 +933,10 @@ textarea {
     width: min(var(--max-width), calc(100% - 1.2rem));
   }
 
+  .stats-band {
+    width: min(var(--max-width), calc(100% - 1.2rem));
+  }
+
   .brand-copy span {
     display: none;
   }
@@ -933,6 +945,7 @@ textarea {
     display: grid;
     gap: 0.75rem;
     min-height: auto;
+    margin-top: 0.75rem;
   }
 
   .floating-note {
