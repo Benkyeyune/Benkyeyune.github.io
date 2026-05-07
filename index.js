@@ -43,6 +43,11 @@ if ("IntersectionObserver" in window) {
         }
 
         entry.target.classList.add("is-visible");
+
+        if (entry.target.classList.contains("timeline-item")) {
+          entry.target.closest(".timeline")?.classList.add("is-visible");
+        }
+
         observer.unobserve(entry.target);
       });
     },
@@ -55,4 +60,7 @@ if ("IntersectionObserver" in window) {
   revealItems.forEach((item) => revealObserver.observe(item));
 } else {
   revealItems.forEach((item) => item.classList.add("is-visible"));
+  document.querySelectorAll(".timeline").forEach((timeline) => {
+    timeline.classList.add("is-visible");
+  });
 }
